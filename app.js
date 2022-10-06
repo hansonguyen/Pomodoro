@@ -5,13 +5,16 @@ let clock = document.getElementById("clock");
 const totalMin = 1;
 let totalSec = totalMin * 60;
 let flag = null;
+let onFlag = false;
 
 function setTimer() {
     totalSec = totalMin * 60;
-    let temp = totalSec < 10 ? "0" + totalMin : totalMin;
+    let temp = totalMin < 10 ? "0" + totalMin : totalMin;
     let time = `${temp}:00`;
     clock.innerHTML = time;
     clearInterval(flag);
+    flag = null;
+    onFlag = false;
 }
 
 function runTimer() {
@@ -28,7 +31,8 @@ function runTimer() {
 }
 
 function startTimer() {
-    flag = setInterval(runTimer, 1000);
+    if (onFlag === false) {flag = setInterval(runTimer, 1000);}
+    onFlag = true;
 }
 /*
 let hours = document.getElementById("hours");
