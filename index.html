@@ -9,11 +9,16 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="app.js" async></script>
   </head>
+  <header>
+    <h1 class="name">Pomodoro Timer</h1>
+    <p class="author">Hanson Nguyen</p>
+  </header>
   <body>
-    <div id="clock">00:00</div>
+    <div id="clock">25:00</div>
     <div id="buttons" class="container-fluid">
-      <button id="setbtn" class="btn-lg" onclick="setTimer()">Set</button>
-      <button id="startbtn" class="btn-lg" onclick="startTimer()">Start</button>
+      <button id="studybtn" class="myBtn btn-lg" onclick="setStudyTimer()">Study</button>
+      <button id="breakbtn" class="myBtn btn-lg" onclick="setBreakTimer()">Break</button>
+      <button id="startbtn" class="myBtn btn-lg" onclick="startTimer()">Play</button>
     </div>
   </body>
 </html>
