@@ -9,32 +9,66 @@
 :root {
     --Jet-font: "JetBrains Mono", monospace;
     --Roboto-font: "Roboto Mono", monospace;
+    --primary-color: #1b262c;
+    --color1: #0f4c75;
+    --color2: #3282b8;
+    --color3: #bbe1fa;
 }
 
 body {
-    background-color: lightgoldenrodyellow;
+    background-color: var(--primary-color);
+}
+
+header {
+    font-family: var(--Roboto-font);
+    color: var(--color3);
+    text-align: center;
+    text-shadow: 10px 10px 5px rgba(0,0,0,0.2);
+}
+
+header:hover {
+    cursor: default;
+}
+
+.name {
+    padding-top: 5vmin;
+    font-size: 4em;
+}
+
+.author {
+    font-size: 2em;
 }
 
 #clock {
     font-family: var(--Jet-font);
+    color: var(--color3);
     font-size: 20vmin;
     text-align: center;
-    padding-top: 30vmin;
+    padding-top: 10vmin;
+    text-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+}
+
+#clock:hover {
+    cursor: default;
 }
 
 #buttons {
     text-align: center;
 }
 
-#setbtn, #startbtn {
+.myBtn {
     display: inline-block;
+    background-color: var(--color1);
+    color: var(--color3);
     font-family: var(--Roboto-font);
-    font-size: 10vmin;
-    background-color: blanchedalmond;
-    border-radius: 5px;
+    font-size: 5vmin;
+    border-radius: 100px;
     margin: 5vmin;
+    padding: 5vmin;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.7);
 }
 
-#setbtn:hover, #startbtn:hover {
-    background-color: rgb(238, 186, 107);
+.myBtn:hover {
+    background-color: var(--color2);
+    box-shadow: 0px 0px 0px 0px;
 }
