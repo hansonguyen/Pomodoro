@@ -62,7 +62,7 @@ header:hover {
     color: var(--color3);
     font-family: var(--Roboto-font);
     font-size: 5vmin;
-    border-radius: 100px;
+    border-radius: 75px;
     margin: 5vmin;
     padding: 5vmin;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.7);
@@ -74,11 +74,11 @@ header:hover {
 }
 
 .bi {
+    position: relative;
     color: var(--color3);
-    font-size: 4rem;
+    font-size: 8rem;
 }
 
 .bi:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 0px 0px;
 }
